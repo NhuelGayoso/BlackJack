@@ -6,8 +6,8 @@
  */
 
 let deck = [];
-const tipos = ['c', 'd', 'h', 's']
-const especiales = ['a', 'k', 'j', 'q']
+const tipos = ['C', 'D', 'H', 'S']
+const especiales = ['A', 'K', 'J', 'Q']
 
 let puntosJugador = 0
 let puntosComputadora = 0
@@ -53,7 +53,7 @@ const pedirCarta = () => {
 const valorCarta = (carta) => {
     const valor = carta.substring(0, carta.length - 1)
     return (isNaN(valor)) ?
-        (valor === 'a') ? 11 : 10
+        (valor === 'A') ? 11 : 10
         : valor * 1
 }
 
